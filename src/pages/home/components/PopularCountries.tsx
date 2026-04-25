@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import CountryFlag from '../../../components/base/CountryFlag';
 import LazyImage from '@/components/base/LazyImage';
+import { countriesData } from '../../../mocks/countriesData';
 
 const countries = [
   {
@@ -10,7 +11,6 @@ const countries = [
     image:
       'https://readdy.ai/api/search-image?query=Brandenburg%20Gate%20Berlin%20Germany%20iconic%20landmark%20at%20sunset%20with%20golden%20hour%20lighting%20dramatic%20sky%20architectural%20photography%20travel%20destination%20European%20monument&width=400&height=300&seq=10&orientation=landscape',
     approvalRate: 78.0,
-    documentCount: 18,
   },
   {
     id: 'france',
@@ -19,7 +19,6 @@ const countries = [
     image:
       'https://readdy.ai/api/search-image?query=Eiffel%20Tower%20Paris%20France%20iconic%20landmark%20at%20twilight%20with%20city%20lights%20romantic%20atmosphere%20architectural%20photography%20travel%20destination%20European%20monument&width=400&height=300&seq=11&orientation=landscape',
     approvalRate: 85.4,
-    documentCount: 17,
   },
   {
     id: 'italy',
@@ -28,7 +27,6 @@ const countries = [
     image:
       'https://readdy.ai/api/search-image?query=Colosseum%20Rome%20Italy%20ancient%20Roman%20amphitheater%20at%20golden%20hour%20sunset%20dramatic%20lighting%20architectural%20photography%20travel%20destination%20historical%20monument&width=400&height=300&seq=12&orientation=landscape',
     approvalRate: 91.1,
-    documentCount: 16,
   },
   {
     id: 'spain',
@@ -37,9 +35,18 @@ const countries = [
     image:
       'https://readdy.ai/api/search-image?query=Sagrada%20Familia%20Barcelona%20Spain%20Gaudi%20architecture%20at%20sunset%20golden%20hour%20dramatic%20sky%20architectural%20photography%20travel%20destination%20European%20landmark&width=400&height=300&seq=13&orientation=landscape',
     approvalRate: 86.5,
-    documentCount: 17,
   },
 ];
+
+function getDocumentCount(countryId: string): number {
+  const country = countriesData.find(c => c.id === countryId);
+  if (!country) return 0;
+  let count = 0;
+  Object.values(country.documents).forEach((category) => {
+    count += category.items.length;
+  });
+  return count;
+}
 
 export default function PopularCountries() {
   return (
@@ -120,7 +127,7 @@ export default function PopularCountries() {
                 <div className="flex items-center justify-between text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
                   <div className="flex items-center gap-1">
                     <i className="ri-file-list-3-line text-[#00bcd4]"></i>
-                    <span>{country.documentCount} Evrak</span>
+                    <span>{getDocumentCount(country.id)} Evrak</span>
                   </div>
                 </div>
 

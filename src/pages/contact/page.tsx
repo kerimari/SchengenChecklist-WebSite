@@ -66,6 +66,12 @@ export default function ContactPage() {
       content: '+90 505 032 7940',
       link: 'tel:+905050327940',
     },
+    {
+      icon: 'ri-phone-line',
+      title: 'Yurtdışı',
+      content: '+1 448 238 1524',
+      link: 'tel:+14482381524',
+    },
   ];
 
   return (
@@ -108,20 +114,6 @@ export default function ContactPage() {
                 </div>
               </a>
             ))}
-            <a
-              href="tel:+14482381524"
-              className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-5 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-11 h-11 flex items-center justify-center bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl text-white group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                  <i className="ri-phone-line text-xl"></i>
-                </div>
-                <div className="min-w-0 flex-1">
-                  <h3 className="text-sm font-bold text-gray-900 mb-1">Yurtdışı</h3>
-                  <p className="text-sm text-gray-600">+1 448 238 1524</p>
-                </div>
-              </div>
-            </a>
           </div>
         </div>
       </section>

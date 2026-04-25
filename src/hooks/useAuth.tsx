@@ -33,7 +33,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const users = JSON.parse(localStorage.getItem('schengen_users') || '[]');
       
-      const existingUser = users.find((u: any) => u.email === userData.email);
+      const existingUser = users.find((u: { email: string }) => u.email === userData.email);
       if (existingUser) {
         return false;
       }
@@ -61,7 +61,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const login = async (email: string, password: string): Promise<{ success: boolean; needsVerification?: boolean }> => {
     try {
       const users = JSON.parse(localStorage.getItem('schengen_users') || '[]');
-      const foundUser = users.find((u: any) => u.email === email && u.password === password);
+      const foundUser = users.find((u: { email: string; password: string; firstName: string; lastName: string; phone: string }) => u.email === email && u.password === password);
 
       if (foundUser) {
         const userData: User = {

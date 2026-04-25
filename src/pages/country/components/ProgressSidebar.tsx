@@ -178,7 +178,7 @@ export default function ProgressSidebar({
                     <p className={`text-xs font-semibold ${s.titleColor} leading-tight`}>
                       {tip.title}
                     </p>
-                    <p className={`text-[11px] leading-relaxed ${s.textColor} mt-0.5`}>
+                    <p className={`text-xs leading-relaxed ${s.textColor} mt-0.5`}>
                       {tip.text}
                     </p>
                   </div>

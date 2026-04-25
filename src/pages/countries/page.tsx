@@ -28,8 +28,9 @@ export default function CountriesPage() {
   const regions: RegionType[] = ['Tümü', 'Batı Avrupa', 'Orta Avrupa', 'Kuzey Avrupa', 'Güney Avrupa'];
 
   const filteredCountries = allSchengenCountries.filter(country => {
-    const matchesSearch = country.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         country.capital.toLowerCase().includes(searchQuery.toLowerCase());
+    const query = searchQuery.toLocaleLowerCase('tr-TR');
+    const matchesSearch = country.name.toLocaleLowerCase('tr-TR').includes(query) ||
+                         country.capital.toLocaleLowerCase('tr-TR').includes(query);
     const matchesRegion = selectedRegion === 'Tümü' || country.region === selectedRegion;
     const matchesPopular = !showPopularOnly || country.popular;
     return matchesSearch && matchesRegion && matchesPopular;
@@ -75,7 +76,7 @@ export default function CountriesPage() {
       </div>
 
       {/* Search and Filter Section */}
-      <div className="bg-white border-b border-gray-100 sticky top-[64px] z-40">
+      <div className="bg-white border-b border-gray-100 sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col gap-4 sm:gap-6">
             {/* Search */}

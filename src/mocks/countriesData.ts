@@ -1,7 +1,8 @@
 export interface Document {
   name: string;
+  description: string;
   required: boolean;
-  note?: string;
+  note?: string | null;
   applicantType?: 'all' | 'student' | 'employee' | 'self-employed' | 'retired';
 }
 
@@ -244,7 +245,7 @@ export const countriesData: Country[] = [
           { name: 'Banka Hesap Dökümü', description: 'Son 3 ay banka hesap hareketleri', required: true, note: 'Günlük 50€ karşılığı bakiye önerilir', applicantType: 'all' },
           { name: 'Maaş Bordrosu', description: 'Son 3 ay maaş bordroları', required: true, note: 'Çalışanlar için zorunlu', applicantType: 'employee' },
           { name: 'Ebeveyn Sponsor Belgesi', description: 'Ebeveynin mali durumunu gösteren belgeler (banka hesap dökümü, maaş bordrosu, işveren yazısı)', required: true, note: 'Öğrenciler için zorunlu - Ebeveyn sponsor göstermesi gereklidir', applicantType: 'student' },
-          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin not not noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
+          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
         ]
       },
       seyahatEvraklar: {
@@ -352,7 +353,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -429,7 +430,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -580,7 +581,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' },
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' },
           { name: 'Eski Vizeler', description: 'Önceki vizeler', required: false, note: 'Varsa', applicantType: 'all' }
         ]
       }
@@ -657,7 +658,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -733,7 +734,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -927,7 +928,7 @@ export const countriesData: Country[] = [
           { name: 'Banka Hesap Dökümü', description: 'Son 3 ay', required: true, note: 'Günlük 50€ karşılığı bakiye önerilir', applicantType: 'all' },
           { name: 'Maaş Bordrosu', description: 'Son 3 ay', required: true, note: 'Çalışanlar için zorunlu', applicantType: 'employee' },
           { name: 'Ebeveyn Sponsor Belgesi', description: 'Ebeveynin mali durumunu gösteren belgeler (banka hesap dökümü, maaş bordrosu, işveren yazısı)', required: true, note: 'Öğrenciler için zorunlu - Ebeveyn sponsor göstermesi gereklidir', applicantType: 'student' },
-          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin not not not noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
+          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
         ]
       },
       seyahatEvraklar: {
@@ -959,7 +960,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1035,7 +1036,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1112,7 +1113,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1337,7 +1338,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1412,7 +1413,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1489,7 +1490,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1717,7 +1718,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -1794,7 +1795,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -2102,7 +2103,7 @@ export const countriesData: Country[] = [
           { name: 'Aile Cüzdanı', description: 'Evlilik cüzdanı fotokopisi', required: false, note: 'Evliler için', applicantType: 'all' },
           { name: 'Tapu/Araç Ruhsatı', description: 'Mülkiyet belgeleri', required: false, note: 'Bağlayıcılık kanıtı', applicantType: 'all' },
           { name: 'Eski Vize Fotokopileri', description: 'Önceki Schengen vizeleri', required: false, note: 'Varsa ekleyin', applicantType: 'all' },
-          { name: 'Davetiye Mektubu', description: 'Belçika\'dan davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
+          { name: 'Davetiye Mektubu', description: 'Davet mektubu', required: false, note: 'Ziyaret için', applicantType: 'all' }
         ]
       }
     }
@@ -2311,7 +2312,7 @@ export const countriesData: Country[] = [
           { name: 'Banka Hesap Dökümü', description: 'Son 3 ay banka hesap hareketleri', required: true, note: 'Günlük 50€ karşılığı bakiye önerilir', applicantType: 'all' },
           { name: 'Maaş Bordrosu', description: 'Son 3 ay maaş bordroları', required: true, note: 'Çalışanlar için zorunlu', applicantType: 'employee' },
           { name: 'Ebeveyn Sponsor Belgesi', description: 'Ebeveynin mali durumunu gösteren belgeler (banka hesap dökümü, maaş bordrosu, işveren yazısı)', required: true, note: 'Öğrenciler için zorunlu - Ebeveyn sponsor göstermesi gereklidir', applicantType: 'student' },
-          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin not not noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
+          { name: 'Sponsor Taahhütnamesi', description: 'Ebeveynin noter onaylı taahhüt mektubu', required: true, note: 'Öğrenciler için zorunlu - Masrafları karşılayacağına dair', applicantType: 'student' }
         ]
       },
       seyahatEvraklar: {

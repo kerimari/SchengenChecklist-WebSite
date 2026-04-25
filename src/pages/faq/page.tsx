@@ -293,8 +293,8 @@ export default function FAQPage() {
         ...category,
         items: category.items.filter(
           item =>
-            item.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            item.answer.toLowerCase().includes(searchQuery.toLowerCase())
+            item.question.toLocaleLowerCase('tr-TR').includes(searchQuery.toLocaleLowerCase('tr-TR')) ||
+            item.answer.toLocaleLowerCase('tr-TR').includes(searchQuery.toLocaleLowerCase('tr-TR'))
         )
       })).filter(category => category.items.length > 0)
     : faqData.filter(category => category.id === activeCategory);
@@ -321,8 +321,8 @@ export default function FAQPage() {
         setFormData({ name: '', email: '', question: '' });
         setTimeout(() => setSubmitSuccess(false), 5000);
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
+    } catch (err) {
+      console.error('Form submission error:', err);
     } finally {
       setIsSubmitting(false);
     }

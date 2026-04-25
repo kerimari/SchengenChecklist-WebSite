@@ -106,7 +106,7 @@ export default function Footer() {
               <p className="text-white text-base leading-relaxed mb-4 sm:mb-6">
                 Vize güncellemeleri ve ipuçları için bültene abone olun.
               </p>
-              <form data-readdy-form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <form id="newsletter-form" data-readdy-form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                 <input
                   type="email"
                   name="email"
@@ -136,7 +136,7 @@ export default function Footer() {
 
           <div className="relative z-10 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10">
             <div className="flex items-center justify-end">
-              <p className="text-[#b0bec5] text-sm text-right">© 2025 Schengen Checklist. Tüm hakları saklıdır.</p>
+              <p className="text-[#b0bec5] text-sm text-right">© 2026 Schengen Checklist. Tüm hakları saklıdır.</p>
             </div>
           </div>
         </div>

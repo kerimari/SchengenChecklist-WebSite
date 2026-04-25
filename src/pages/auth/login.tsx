@@ -43,17 +43,21 @@ export default function LoginPage() {
     setIsLoading(true);
     setShowVerificationWarning(false);
 
-    const result = await login(formData.email, formData.password);
+    try {
+      const result = await login(formData.email, formData.password);
 
-    setIsLoading(false);
-
-    if (result.success) {
-      navigate('/');
-    } else if (result.needsVerification) {
-      setShowVerificationWarning(true);
-      setErrors({ email: 'Lütfen önce e-posta adresinizi doğrulayın' });
-    } else {
+      if (result.success) {
+        navigate('/');
+      } else if (result.needsVerification) {
+        setShowVerificationWarning(true);
+        setErrors({ email: 'Lütfen önce e-posta adresinizi doğrulayın' });
+      } else {
+        setErrors({ password: 'E-posta veya şifre hatalı' });
+      }
+    } catch {
       setErrors({ password: 'E-posta veya şifre hatalı' });
+    } finally {
+      setIsLoading(false);
     }
   };
 

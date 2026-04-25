@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import Navbar from '../home/components/Navbar';
 import Footer from '../home/components/Footer';
@@ -6,6 +7,7 @@ import ApplicationTracker from './components/ApplicationTracker';
 
 export default function ProfilePage() {
   const { user, isAuthenticated, logout } = useAuth();
+  const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
   const [showPasswordForm, setShowPasswordForm] = useState(false);
   const [memberSince, setMemberSince] = useState('');
@@ -28,14 +30,14 @@ export default function ProfilePage() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      window.REACT_APP_NAVIGATE('/login');
+      navigate('/login');
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, navigate]);
 
   useEffect(() => {
     if (user) {
       const users = JSON.parse(localStorage.getItem('schengen_users') || '[]');
-      const foundUser = users.find((u: any) => u.email === user.email);
+      const foundUser = users.find((u: { email: string; createdAt?: string }) => u.email === user.email);
       if (foundUser && foundUser.createdAt) {
         const date = new Date(foundUser.createdAt);
         const formattedDate = date.toLocaleDateString('tr-TR', {
@@ -67,7 +69,7 @@ export default function ProfilePage() {
 
     try {
       const users = JSON.parse(localStorage.getItem('schengen_users') || '[]');
-      const userIndex = users.findIndex((u: any) => u.email === user?.email);
+      const userIndex = users.findIndex((u: { email: string }) => u.email === user?.email);
 
       if (userIndex === -1) {
         setPasswordStatus('error');
@@ -95,7 +97,7 @@ export default function ProfilePage() {
         setShowPasswordForm(false);
         setPasswordStatus(null);
       }, 2000);
-    } catch (error) {
+    } catch {
       setPasswordStatus('error');
       setPasswordError('Şifre değiştirme sırasında bir hata oluştu.');
     }
@@ -103,7 +105,7 @@ export default function ProfilePage() {
 
   const handleLogout = () => {
     logout();
-    window.REACT_APP_NAVIGATE('/');
+    navigate('/');
   };
 
   if (!user) {
@@ -184,8 +186,8 @@ export default function ProfilePage() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Telefon
                   </label>
-                  <div className="w-full px-4 py-3 text-sm rounded-xl border border-gray-200 bg-gray-50">
-                    {user.phone}
+                  <div className="w-full px-4 py-3 text-sm rounded-xl border border-gray-200 bg-gray-50 text-gray-500">
+                    {user.phone || 'Belirtilmemiş'}
                   </div>
                 </div>
 

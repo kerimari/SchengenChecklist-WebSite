@@ -147,7 +147,7 @@ export default function DocumentUploadTracker({ countryId, countryName }: Docume
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 bg-gradient-to-r from-[#00bcd4] to-[#0097a7] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer group"
+        className="fixed bottom-36 sm:bottom-24 right-4 sm:right-6 z-40 bg-gradient-to-r from-[#00bcd4] to-[#0097a7] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer group"
       >
         <div className="relative">
           <i className="ri-upload-cloud-2-line text-2xl"></i>
@@ -220,7 +220,7 @@ export default function DocumentUploadTracker({ countryId, countryName }: Docume
               {/* Category Selection */}
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-3">Evrak Kategorisi Seçin</label>
-                <div className="grid grid-cols-4 gap-2 sm:gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
                   {categories.map((cat) => (
                     <button
                       key={cat.id}
@@ -240,7 +240,7 @@ export default function DocumentUploadTracker({ countryId, countryName }: Docume
 
               {/* Upload Area */}
               <div
-                className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all ${
+                className={`border-2 border-dashed rounded-2xl p-5 sm:p-8 text-center transition-all ${
                   dragActive
                     ? 'border-[#00bcd4] bg-[#00bcd4]/10'
                     : 'border-gray-300 hover:border-[#00bcd4]'
@@ -312,13 +312,13 @@ export default function DocumentUploadTracker({ countryId, countryName }: Docume
               )}
 
               {/* Info Box */}
-              <div className="mt-6 bg-blue-50 rounded-xl p-4 flex items-start gap-3">
-                <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <i className="ri-information-line text-blue-600"></i>
+              <div className="mt-6 bg-teal-50 rounded-xl p-4 flex items-start gap-3">
+                <div className="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i className="ri-information-line text-teal-600"></i>
                 </div>
                 <div>
-                  <p className="text-sm text-blue-800 font-medium">Evrak Takip Sistemi</p>
-                  <p className="text-xs text-blue-600 mt-1">
+                  <p className="text-sm text-teal-800 font-medium">Evrak Takip Sistemi</p>
+                  <p className="text-xs text-teal-600 mt-1">
                     Yüklediğiniz evraklar hesabınıza özel olarak saklanır. 
                     Başvuru sürecinizi takip etmek ve eksik evraklarınızı görmek için bu sistemi kullanabilirsiniz.
                   </p>

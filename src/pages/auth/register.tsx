@@ -276,7 +276,7 @@ export default function RegisterPage() {
                     </div>
                   </div>
                   <span className="text-sm text-gray-600 leading-relaxed">
-                    <Link to="/kvkk" target="_blank" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
+                    <Link to="/kvkk" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
                       KVKK Aydınlatma Metni
                     </Link>
                     'ni okudum ve onaylıyorum.
@@ -308,11 +308,11 @@ export default function RegisterPage() {
                     </div>
                   </div>
                   <span className="text-sm text-gray-600 leading-relaxed">
-                    <Link to="/privacy-policy" target="_blank" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
+                    <Link to="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
                       Gizlilik Politikası
                     </Link>
                     'nı ve{' '}
-                    <Link to="/terms-of-use" target="_blank" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
+                    <Link to="/terms-of-use" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 font-medium underline underline-offset-2">
                       Kullanım Koşulları
                     </Link>
                     'nı okudum ve onaylıyorum.
