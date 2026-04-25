@@ -44,4 +44,4 @@ To run the project on your local machine:
 3. Start the development server: `npm run dev`
 
 ---
-Developed with 💡 and AI by [Kerim Arı](https://github.com/kerimari)
+Developed with 💡 and AI by [Kerim Ari](https://github.com/kerimari)
