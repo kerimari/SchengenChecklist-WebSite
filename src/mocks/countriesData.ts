@@ -51,7 +51,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'iDATA',
     appointmentUrl: 'https://www.idata.com.tr',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/germany.jpg",
     approvalRate: 78.0,
     tips: [
       { icon: 'ri-calendar-2-line', title: 'Randevu Süreci (iDATA)', text: 'Almanya konsolosluğu randevuları doğrudan açmaz. iDATA üzerinden önce bekleme listesine girmeniz gerekir. Bu listeye göre yaklaşık 6-9 ay sonra rastgele bir tarihe randevu atanır; bu nedenle seyahat planlamanızı çok önceden yapmanız kritik önem taşır.', type: 'warning' },
@@ -130,7 +130,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/fra',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/france.jpg",
     approvalRate: 85.4,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Süreci (VFS Global)', text: 'VFS Global\'ün Fransa randevu sistemi sürekli teknik hatalar vermektedir. Randevular sık sık açılsa bile sisteme bağlanmak ve slot yakalamak oldukça güçtür. Sabırlı olun ve sistemi düzenli aralıklarla takip edin.', type: 'warning' },
@@ -219,7 +219,7 @@ export const countriesData: Country[] = [
         soldOutUntil: '13.03.2026'
       }
     ],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/italy.jpg",
     approvalRate: 91.1,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Erken Randevu Alın (iDATA)', text: 'iDATA\'da randevu almak oldukça zordur. Yoğunluk yüzünden sistem ödeme ekranında sürekli hata verir. Seyahat tarihinizden en az 3 ay önce randevu almaya başlayın.', type: 'warning' },
@@ -296,7 +296,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'BLS International',
     appointmentUrl: 'https://turkey.blsspainvisa.com/istanbul/',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/spain.jpg",
     approvalRate: 86.5,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Yoğunluğu (BLS International)', text: 'Sürekli randevu açılmasına rağmen BLS International üzerinden randevu almak bir hayli zordur. Seyahat tarihinizden en az 3 ay önce randevu bakmaya başlayın.', type: 'warning' },
@@ -371,7 +371,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/nld',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/netherlands.jpg",
     approvalRate: 80.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Sıkı Denetim', text: 'Hollanda, mali belgeleri çok detaylı inceler. Banka hesabınızda ani yüksek para girişleri varsa bunların kaynağını açıklayan belge hazırlayın.', type: 'warning' },
@@ -448,7 +448,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/aut',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/austria.jpg",
     approvalRate: 83.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Titiz İnceleme', text: 'Avusturya konsolosluğu evrakları çok titiz inceler. Eksik veya hatalı belge durumunda başvuru doğrudan reddedilebilir.', type: 'warning' },
@@ -524,7 +524,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/bel',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/belgium.jpg",
     approvalRate: 72.5,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Yavaş İşlem', text: 'Belçika vize işlemleri bazen 30 güne kadar uzayabilir. Seyahat tarihinizden en az 2 ay önce başvurun.', type: 'warning' },
@@ -600,7 +600,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/cze',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/czech.jpg",
     approvalRate: 79.4,
     tips: [
       { icon: 'ri-calendar-check-line', title: 'Randevu Süreci (VFS Global)', text: 'Çekya\'nın VFS Global sistemi, Fransa gibi ülkelere kıyasla çok daha stabil çalışır. Randevu almak görece kolaydır; ancak randevular genellikle ayda bir kez açılır. Sistemi düzenli takip etmeniz ve uygun slot çıktığında hızlıca almanız önerilir.', type: 'success' },
@@ -676,7 +676,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/dnk',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/denmark.jpg",
     approvalRate: 60.6,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Uzun Bekleme', text: 'Danimarka vize işlemleri 15-20 iş günü sürer. Yaz aylarında bu süre 4 haftayı aşabilir, seyahat tarihinizden en az 2 ay önce başvurun.', type: 'warning' },
@@ -752,7 +752,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/est',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/estonia.jpg",
     approvalRate: 57.5,
     tips: [
       { icon: 'ri-check-double-line', title: 'Kolay Başvuru', text: 'Estonya, nispeten kolay vize veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile onay oranı artar.', type: 'success' },
@@ -827,7 +827,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/fin',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/finland.jpg",
     approvalRate: 68.7,
     tips: [
       { icon: 'ri-snowy-line', title: 'Kış Seyahati', text: 'Kış aylarında Finlandiya\'ya gidecekseniz, seyahat sigortanızın kış sporları ve soğuk hava koşullarını kapsadığından emin olun.', type: 'info' },
@@ -902,7 +902,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'Kosmos Vize',
     appointmentUrl: 'https://www.kosmosvize.com',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/greece.jpg",
     approvalRate: 85.4,
     tips: [
       { icon: 'ri-ship-line', title: 'Kapıda Vize ile Ada Girişi', text: 'Yunan adalarına geleneksel Schengen vizesi almak yerine kapıda vize alarak giriş yapabilirsiniz. Aydın, İzmir, İstanbul gibi çeşitli şehirlerden feribot seferleri kalkmaktadır. Ancak bu kapıda vize yalnızca bulunduğunuz adada geçerlidir; diğer Schengen ülkelerine geçiş kesinlikle yasaktır.', type: 'info' },
@@ -978,7 +978,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/hungary.jpg",
     approvalRate: 85.1,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Uygun Bütçe', text: 'Macaristan, Schengen ülkeleri arasında en düşük günlük bakiye beklentisine sahiptir. Günlük 40€ karşılığı yeterlidir.', type: 'success' },
@@ -1054,7 +1054,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/isl',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/iceland.jpg",
     approvalRate: 82.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Çok Yüksek Maliyet', text: 'İzlanda dünyanın en pahalı ülkelerinden biridir. Günlük en az 100€ (yaklaşık 15.000 ISK) karşılığı bakiye önerilir.', type: 'warning' },
@@ -1131,7 +1131,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/lva',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/latvia.jpg",
     approvalRate: 75.0,
     tips: [
       { icon: 'ri-check-double-line', title: 'Kolay Başvuru', text: 'Letonya, nispeten kolay vize veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile onay oranı artar.', type: 'success' },
@@ -1206,7 +1206,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/che',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/liechtenstein.jpg",
     approvalRate: 82.3,
     tips: [
       { icon: 'ri-information-line', title: 'İsviçre Üzerinden', text: 'Lihtenştayn vizesi İsviçre konsolosluğu üzerinden işlenir. VFS Global\'den İsviçre/Lihtenştayn seçeneğini işaretleyin.', type: 'info' },
@@ -1281,7 +1281,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/ltu',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/lithuania.jpg",
     approvalRate: 66.0,
     tips: [
       { icon: 'ri-check-double-line', title: 'Hızlı İşlem', text: 'Litvanya genellikle 7-10 iş günü içinde vize sonucu verir. Schengen ülkelerinden en hızlı sonuç veren ülkelere sahiptir.', type: 'success' },
@@ -1356,7 +1356,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/lux',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/luxembourg.jpg",
     approvalRate: 83.0,
     tips: [
       { icon: 'ri-information-line', title: 'Belçika Üzerinden', text: 'Lüksemburg vizesi Belçika konsolosluğu üzerinden işlenir. VFS Global\'den Belçika/Lüksemburg seçeneğini işaretleyin.', type: 'info' },
@@ -1431,7 +1431,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/portugal.jpg",
     approvalRate: 93.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Sıkıntısı', text: 'Portekiz son yıllarda çok popüler oldu. Randevu bulmak zorlaşabilir, 1-2 ay önceden başvurun.', type: 'warning' },
@@ -1508,7 +1508,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/mlt',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/malta.jpg",
     approvalRate: 61.5,
     tips: [
       { icon: 'ri-translate-2', title: 'İngilizce Resmi Dil', text: 'Malta\'nın resmi dillerinden biri İngilizcedir. Belgelerinizin İngilizce tercümesi yeterlidir, ayrıca Maltaca gerekmez.', type: 'info' },
@@ -1584,7 +1584,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/nor',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/norway.jpg",
     approvalRate: 79.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'Norveç, Avrupa\'nın en pahalı ülkesidir. Günlük en az 80€ karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -1660,7 +1660,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/pol',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/poland.jpg",
     approvalRate: 82.6,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Polonya, Türk vatandaşlarına oldukça yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1736,7 +1736,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'BLS International',
     appointmentUrl: 'https://blsslovakiavisa.com/turkey/',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/slovakia.jpg",
     approvalRate: 88.8,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Slovakya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1813,7 +1813,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/slovenia.jpg",
     approvalRate: 89.1,
     tips: [
       { icon: 'ri-check-double-line', title: 'En Yüksek Onay Oranlarından Biri', text: 'Slovenya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1890,7 +1890,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/swe',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/sweden.jpg",
     approvalRate: 80.8,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'İsveç, Avrupa\'nın en pahalı ülkesidir. Günlük en az 75€ karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -1967,7 +1967,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/che',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/switzerland.jpg",
     approvalRate: 84.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'İsviçre, Avrupa\'nın en pahalı ülkesidir. Günlük en az 100 CHF (yaklaşık 105€) karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -2044,7 +2044,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/hrv',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/croatia.jpg",
     approvalRate: 79.0,
     tips: [
       { icon: 'ri-calendar-check-line', title: 'Randevu Süreci (VFS Global)', text: 'Hırvatistan randevuları VFS Global üzerinden alınmaktadır. Yaz aylarında (Haziran-Ağustos) turizm yoğunluğu nedeniyle randevu bulmak güçleşebilir; seyahat tarihinizden en az 2 ay önce başvurmanız önerilir.', type: 'warning' },
@@ -2121,7 +2121,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/bgr',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/bulgaria.jpg",
     approvalRate: 81.2,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Bulgaristan, Türk vatandaşlarına oldukça yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -2198,7 +2198,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/rou',
     appointmentStatus: [],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/romania.jpg",
     approvalRate: 87.2,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Romanya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -2286,7 +2286,7 @@ export const countriesData: Country[] = [
         soldOutUntil: '13.03.2026'
       }
     ],
-    heroImage: '/countries-bg.jpg',
+    heroImage: "/countries/italy.jpg",
     approvalRate: 91.1,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Erken Randevu Alın (iDATA)', text: 'iDATA\'da randevu almak oldukça zordur. Yoğunluk yüzünden sistem ödeme ekranında sürekli hata verir. Seyahat tarihinizden en az 3 ay önce randevu almaya başlayın.', type: 'warning' },
