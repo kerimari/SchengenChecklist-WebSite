@@ -1,14 +1,13 @@
 /**
  * Schengen Checklist - Service Worker
  * Strategy:
- *  - App shell (JS/CSS/HTML) → Cache First, fallback network
- *  - Google Fonts / Remix Icon CDN → Cache First (stale-while-revalidate)
- *  - readdy.ai images → Cache First with 7-day expiry
- *  - API / Supabase calls → Network First, fallback cache
- *  - Navigation requests → Network First, fallback cached index.html (SPA offline support)
+ * - App shell (JS/CSS/HTML/Images) → Cache First, fallback network
+ * - Google Fonts / Remix Icon CDN → Cache First (stale-while-revalidate)
+ * - API calls → Network First, fallback cache
+ * - Navigation requests → Network First, fallback cached index.html (SPA offline support)
  */
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2'; 
 const SHELL_CACHE = `shell-${CACHE_VERSION}`;
 const FONT_CACHE = `fonts-${CACHE_VERSION}`;
 const IMAGE_CACHE = `images-${CACHE_VERSION}`;
@@ -22,6 +21,7 @@ const IMAGE_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 const SHELL_ASSETS = [
   '/',
   '/index.html',
+  '/hero-bg.jpg', // Kendi eklediğimiz resmi önceden yüklüyoruz
 ];
 
 // ─── Install ──────────────────────────────────────────────────────────────────
@@ -68,17 +68,17 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. readdy.ai images → Cache First with TTL
-  if (url.hostname === 'readdy.ai' && url.pathname.startsWith('/api/search-image')) {
+  // 2. Kendi sunucumuzdaki resimler (jpg, png, svg, webp) → Cache First with TTL
+  if (
+    url.origin === self.location.origin &&
+    url.pathname.match(/\.(jpg|jpeg|png|svg|webp|gif)$/i)
+  ) {
     event.respondWith(imageCache(request));
     return;
   }
 
-  // 3. Supabase / API calls → Network First
-  if (
-    url.hostname.includes('supabase.co') ||
-    url.pathname.startsWith('/api/')
-  ) {
+  // 3. API calls (örn: Formspree, gelecekteki backend vb.) → Network First
+  if (url.pathname.startsWith('/api/')) {
     event.respondWith(networkFirst(request, API_CACHE));
     return;
   }

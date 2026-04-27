@@ -49,7 +49,7 @@ export default function CountriesPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://readdy.ai/api/search-image?query=Beautiful%20European%20landmarks%20collage%20with%20Eiffel%20Tower%20Colosseum%20Brandenburg%20Gate%20in%20soft%20focus%2C%20elegant%20travel%20concept%2C%20warm%20sunset%20golden%20hour%20lighting%2C%20professional%20photography%2C%20dreamy%20atmosphere%2C%20muted%20earth%20tones%2C%20sophisticated%20travel%20destination%20aesthetic&width=1920&height=500&seq=countries003&orientation=landscape')`,
+            backgroundImage: `url('/countries-bg.jpg')`,
             filter: 'brightness(0.7) contrast(1.05)'
           }}
         />

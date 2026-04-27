@@ -6,7 +6,7 @@ export default function CTA() {
     <section className="relative w-full min-h-[400px] sm:min-h-[450px] lg:min-h-[500px] h-[50vh] overflow-hidden my-12 sm:my-16 lg:my-24">
       <div className="absolute inset-0">
         <LazyImage
-          src="https://readdy.ai/api/search-image?query=Wide%20panoramic%20view%20of%20beautiful%20European%20city%20skyline%2C%20Paris%20or%20Rome%20architecture%2C%20golden%20hour%20lighting%2C%20professional%20travel%20photography%2C%20horizontal%20composition%2C%20clear%20sky%2C%20iconic%20buildings%2C%20elegant%20urban%20landscape%2C%20high%20quality%20tourism%20photo&width=1920&height=800&seq=cta001&orientation=landscape"
+          src="/cta-bg.jpg"
           alt="Avrupa Şehir Manzarası"
           loading="lazy"
           aspectRatio="21/9"

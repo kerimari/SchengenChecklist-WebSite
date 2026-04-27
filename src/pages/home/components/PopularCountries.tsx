@@ -8,32 +8,28 @@ const countries = [
     id: 'germany',
     name: 'Almanya',
     flag: '🇩🇪',
-    image:
-      'https://readdy.ai/api/search-image?query=Brandenburg%20Gate%20Berlin%20Germany%20iconic%20landmark%20at%20sunset%20with%20golden%20hour%20lighting%20dramatic%20sky%20architectural%20photography%20travel%20destination%20European%20monument&width=400&height=300&seq=10&orientation=landscape',
+    image: '/germany.jpg',
     approvalRate: 78.0,
   },
   {
     id: 'france',
     name: 'Fransa',
     flag: '🇫🇷',
-    image:
-      'https://readdy.ai/api/search-image?query=Eiffel%20Tower%20Paris%20France%20iconic%20landmark%20at%20twilight%20with%20city%20lights%20romantic%20atmosphere%20architectural%20photography%20travel%20destination%20European%20monument&width=400&height=300&seq=11&orientation=landscape',
+    image: '/france.jpg',
     approvalRate: 85.4,
   },
   {
     id: 'italy',
     name: 'İtalya',
     flag: '🇮🇹',
-    image:
-      'https://readdy.ai/api/search-image?query=Colosseum%20Rome%20Italy%20ancient%20Roman%20amphitheater%20at%20golden%20hour%20sunset%20dramatic%20lighting%20architectural%20photography%20travel%20destination%20historical%20monument&width=400&height=300&seq=12&orientation=landscape',
+    image: '/italy.jpg',
     approvalRate: 91.1,
   },
   {
     id: 'spain',
     name: 'İspanya',
     flag: '🇪🇸',
-    image:
-      'https://readdy.ai/api/search-image?query=Sagrada%20Familia%20Barcelona%20Spain%20Gaudi%20architecture%20at%20sunset%20golden%20hour%20dramatic%20sky%20architectural%20photography%20travel%20destination%20European%20landmark&width=400&height=300&seq=13&orientation=landscape',
+    image: '/spain.jpg',
     approvalRate: 86.5,
   },
 ];

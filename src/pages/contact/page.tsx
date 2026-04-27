@@ -20,12 +20,14 @@ export default function ContactPage() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://readdy.ai/api/form/d6gtd52pd4a8ta1ledcg', {
+      // Formspree entegrasyonu sağlandı
+      const response = await fetch('https://formspree.io/f/xbdqbvje', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json' // Formspree'nin sayfayı yönlendirmemesi için eklendi
         },
-        body: new URLSearchParams({
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
@@ -80,7 +82,7 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section className="relative pt-20 sm:pt-24 lg:pt-28 pb-10 sm:pb-16 bg-gradient-to-br from-teal-50 via-white to-orange-50">
-        <div className="absolute inset-0 bg-[url('https://readdy.ai/api/search-image?query=modern%20minimalist%20geometric%20pattern%20with%20soft%20teal%20and%20orange%20abstract%20shapes%20on%20white%20background%20clean%20professional%20design%20subtle%20texture%20for%20contact%20page%20header%20contemporary%20style&width=1920&height=400&seq=contact-hero-bg&orientation=landscape')] opacity-5 bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-5 bg-cover bg-center"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -126,7 +128,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 lg:p-10 border border-gray-100">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Mesaj Gönderin</h2>
-                <form id="contact-form" data-readdy-form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                <form id="contact-form" onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">

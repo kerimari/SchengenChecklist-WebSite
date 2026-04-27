@@ -304,16 +304,19 @@ export default function FAQPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://readdy.ai/api/form/d62fo500h9ov63emh700', {
+      // Formspree entegrasyonu sağlandı
+      const response = await fetch('https://formspree.io/f/xbdqbvje', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: new URLSearchParams({
+        body: JSON.stringify({
+          subject: 'Yeni SSS Sorusu',
           name: formData.name,
           email: formData.email,
           question: formData.question
-        }).toString()
+        })
       });
 
       if (response.ok) {
@@ -562,7 +565,6 @@ export default function FAQPage() {
 
           <form
             id="faq-question-form"
-            data-readdy-form
             onSubmit={handleSubmit}
             className="bg-[#f8fafc] rounded-2xl p-5 sm:p-8"
           >

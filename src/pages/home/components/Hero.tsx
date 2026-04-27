@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import LazyImage from '@/components/base/LazyImage';
 
@@ -6,9 +5,8 @@ export default function Hero() {
   return (
     <div className="relative w-full min-h-[500px] sm:min-h-[550px] lg:min-h-[600px] h-[70vh] lg:h-[60vh] overflow-hidden">
       <div className="absolute inset-0">
-        {/* LCP image — eager so it loads immediately */}
         <LazyImage
-          src="https://readdy.ai/api/search-image?query=Aerial%20view%20of%20European%20cityscape%20at%20dusk%20with%20historic%20architecture%20and%20warm%20golden%20lights%2C%20romantic%20European%20travel%20destination%2C%20cobblestone%20streets%2C%20cathedral%20spires%2C%20terracotta%20rooftops%2C%20cinematic%20atmosphere%2C%20professional%20travel%20photography%2C%20dark%20moody%20evening%20sky%2C%20city%20lights%20glowing&width=1920&height=1080&seq=hero002&orientation=landscape"
+          src="/hero-bg.jpg"
           alt="Avrupa Şehir Manzarası"
           loading="eager"
           fetchPriority="high"

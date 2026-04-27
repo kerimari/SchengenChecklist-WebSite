@@ -51,7 +51,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'iDATA',
     appointmentUrl: 'https://www.idata.com.tr',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Brandenburg%20Gate%20Berlin%20Germany%20iconic%20landmark%20neoclassical%20architecture%20blue%20sky%20historic%20monument%20city%20center%20famous%20tourist%20destination%20European%20capital%20architectural%20masterpiece%20cultural%20heritage%20symbol%20of%20unity%20grand%20columns%20majestic%20structure%20urban%20landscape%20travel%20photography&width=1400&height=400&seq=germany-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 78.0,
     tips: [
       { icon: 'ri-calendar-2-line', title: 'Randevu Süreci (iDATA)', text: 'Almanya konsolosluğu randevuları doğrudan açmaz. iDATA üzerinden önce bekleme listesine girmeniz gerekir. Bu listeye göre yaklaşık 6-9 ay sonra rastgele bir tarihe randevu atanır; bu nedenle seyahat planlamanızı çok önceden yapmanız kritik önem taşır.', type: 'warning' },
@@ -130,7 +130,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/fra',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Eiffel%20Tower%20Paris%20France%20iconic%20landmark%20iron%20lattice%20tower%20sunset%20golden%20hour%20romantic%20city%20Seine%20river%20view%20famous%20monument%20French%20capital%20architectural%20wonder%20travel%20destination%20European%20tourism%20elegant%20structure%20city%20skyline%20cultural%20symbol&width=1400&height=400&seq=france-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 85.4,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Süreci (VFS Global)', text: 'VFS Global\'ün Fransa randevu sistemi sürekli teknik hatalar vermektedir. Randevular sık sık açılsa bile sisteme bağlanmak ve slot yakalamak oldukça güçtür. Sabırlı olun ve sistemi düzenli aralıklarla takip edin.', type: 'warning' },
@@ -219,7 +219,7 @@ export const countriesData: Country[] = [
         soldOutUntil: '13.03.2026'
       }
     ],
-    heroImage: 'https://readdy.ai/api/search-image?query=Colosseum%20Rome%20Italy%20ancient%20amphitheater%20Roman%20architecture%20historic%20landmark%20blue%20sky%20iconic%20monument%20archaeological%20site%20Italian%20heritage%20famous%20ruins%20travel%20destination%20classical%20architecture%20European%20history%20tourist%20attraction%20majestic%20structure&width=1400&height=400&seq=italy-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 91.1,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Erken Randevu Alın (iDATA)', text: 'iDATA\'da randevu almak oldukça zordur. Yoğunluk yüzünden sistem ödeme ekranında sürekli hata verir. Seyahat tarihinizden en az 3 ay önce randevu almaya başlayın.', type: 'warning' },
@@ -296,7 +296,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'BLS International',
     appointmentUrl: 'https://turkey.blsspainvisa.com/istanbul/',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Sagrada%20Familia%20Barcelona%20Spain%20Gaudi%20architecture%20iconic%20basilica%20modernist%20design%20colorful%20facade%20Spanish%20landmark%20religious%20monument%20artistic%20masterpiece%20blue%20sky%20famous%20cathedral%20travel%20destination%20architectural%20wonder%20European%20tourism%20unique%20structure&width=1400&height=400&seq=spain-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 86.5,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Yoğunluğu (BLS International)', text: 'Sürekli randevu açılmasına rağmen BLS International üzerinden randevu almak bir hayli zordur. Seyahat tarihinizden en az 3 ay önce randevu bakmaya başlayın.', type: 'warning' },
@@ -371,7 +371,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/nld',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Amsterdam%20canals%20Netherlands%20traditional%20Dutch%20houses%20colorful%20buildings%20waterfront%20architecture%20bicycles%20bridges%20European%20city%20travel%20photography%20historic%20district%20charming%20streets%20Dutch%20culture%20iconic%20scenery%20tourist%20attraction%20picturesque%20view&width=1400&height=400&seq=netherlands-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 80.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Sıkı Denetim', text: 'Hollanda, mali belgeleri çok detaylı inceler. Banka hesabınızda ani yüksek para girişleri varsa bunların kaynağını açıklayan belge hazırlayın.', type: 'warning' },
@@ -448,7 +448,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/aut',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Schonbrunn%20Palace%20Vienna%20Austria%20baroque%20architecture%20imperial%20palace%20gardens%20historic%20landmark%20yellow%20facade%20Austrian%20heritage%20royal%20residence%20European%20tourism%20majestic%20building%20cultural%20monument%20travel%20destination%20elegant%20structure&width=1400&height=400&seq=austria-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 83.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Titiz İnceleme', text: 'Avusturya konsolosluğu evrakları çok titiz inceler. Eksik veya hatalı belge durumunda başvuru doğrudan reddedilebilir.', type: 'warning' },
@@ -524,7 +524,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/bel',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Grand%20Place%20Brussels%20Belgium%20medieval%20square%20ornate%20guildhalls%20golden%20facades%20historic%20architecture%20European%20landmark%20Belgian%20heritage%20city%20center%20tourist%20destination%20baroque%20buildings%20cultural%20monument%20travel%20photography%20charming%20district%20blue%20sky&width=1400&height=400&seq=belgium-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 72.5,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Yavaş İşlem', text: 'Belçika vize işlemleri bazen 30 güne kadar uzayabilir. Seyahat tarihinizden en az 2 ay önce başvurun.', type: 'warning' },
@@ -600,7 +600,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/cze',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Prague%20Castle%20Czech%20Republic%20medieval%20fortress%20Gothic%20architecture%20imperial%20palace%20gardens%20historic%20landmark%20Vltava%20river%20view%20European%20heritage%20royal%20residence%20city%20skyline%20tourist%20destination%20ancient%20monument%20Czech%20culture%20majestic%20structure%20travel%20photography%20blue%20sky&width=1400&height=400&seq=czech-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 79.4,
     tips: [
       { icon: 'ri-calendar-check-line', title: 'Randevu Süreci (VFS Global)', text: 'Çekya\'nın VFS Global sistemi, Fransa gibi ülkelere kıyasla çok daha stabil çalışır. Randevu almak görece kolaydır; ancak randevular genellikle ayda bir kez açılır. Sistemi düzenli takip etmeniz ve uygun slot çıktığında hızlıca almanız önerilir.', type: 'success' },
@@ -676,7 +676,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/dnk',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Nyhavn%20Copenhagen%20Denmark%20colorful%20houses%20waterfront%20canal%20historic%20harbor%20Scandinavian%20architecture%20boats%20Danish%20landmark%20tourist%20destination%20vibrant%20facades%20European%20city%20blue%20sky%20travel%20photography%20Scandinavian%20heritage&width=1400&height=400&seq=denmark-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 60.6,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Uzun Bekleme', text: 'Danimarka vize işlemleri 15-20 iş günü sürer. Yaz aylarında bu süre 4 haftayı aşabilir, seyahat tarihinizden en az 2 ay önce başvurun.', type: 'warning' },
@@ -752,7 +752,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/est',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Tallinn%20Old%20Town%20Estonia%20historic%20city%20center%20medieval%20architecture%20wooden%20buildings%20historic%20center%20Baltic%20heritage%20European%20city%20UNESCO%20site%20tourist%20destination%20charming%20streets%20cultural%20landmark%20travel%20photography%20blue%20sky%20travel%20photography%20Scandinavian%20heritage&width=1400&height=400&seq=estonia-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 57.5,
     tips: [
       { icon: 'ri-check-double-line', title: 'Kolay Başvuru', text: 'Estonya, nispeten kolay vize veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile onay oranı artar.', type: 'success' },
@@ -827,7 +827,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/fin',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Helsinki%20Cathedral%20Finland%20white%20neoclassical%20church%20green%20domes%20Senate%20Square%20Finnish%20landmark%20Nordic%20architecture%20Lutheran%20cathedral%20city%20center%20tourist%20destination%20European%20monument%20elegant%20structure%20blue%20sky&width=1400&height=400&seq=finland-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 68.7,
     tips: [
       { icon: 'ri-snowy-line', title: 'Kış Seyahati', text: 'Kış aylarında Finlandiya\'ya gidecekseniz, seyahat sigortanızın kış sporları ve soğuk hava koşullarını kapsadığından emin olun.', type: 'info' },
@@ -902,7 +902,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'Kosmos Vize',
     appointmentUrl: 'https://www.kosmosvize.com',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Parthenon%20Athens%20Greece%20ancient%20temple%20Acropolis%20classical%20Greek%20architecture%20marble%20columns%EF%BF%BDhistoric%20ruins%20archaeological%20site%20Mediterranean%20landmark%20cultural%20heritage%20tourist%20destination%20blue%20sky%EF%BF%BDiconic%20monument%20travel%20photography%EF%BF%BDancient%20civilization&width=1400&height=400&seq=greece-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 85.4,
     tips: [
       { icon: 'ri-ship-line', title: 'Kapıda Vize ile Ada Girişi', text: 'Yunan adalarına geleneksel Schengen vizesi almak yerine kapıda vize alarak giriş yapabilirsiniz. Aydın, İzmir, İstanbul gibi çeşitli şehirlerden feribot seferleri kalkmaktadır. Ancak bu kapıda vize yalnızca bulunduğunuz adada geçerlidir; diğer Schengen ülkelerine geçiş kesinlikle yasaktır.', type: 'info' },
@@ -978,7 +978,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Hungarian%20Parliament%20Budapest%20Hungary%20Gothic%20Revival%20architecture%20Danube%20river%20view%20iconic%20landmark%20ornate%20building%20European%20capital%20historic%20monument%20travel%20destination%20majestic%20structure%20blue%20sky%20travel%20photography%20Scandinavian%20heritage&width=1400&height=400&seq=hungary-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 85.1,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Uygun Bütçe', text: 'Macaristan, Schengen ülkeleri arasında en düşük günlük bakiye beklentisine sahiptir. Günlük 40€ karşılığı yeterlidir.', type: 'success' },
@@ -1054,7 +1054,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/isl',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Icelandic%20landscape%20Iceland%20volcanic%20terrain%20geothermal%20springs%20dramatic%20nature%20rugged%20mountains%20serene%20waters%20travel%20destination%20Nordic%20beauty%20majestic%20scenery%20outdoor%20adventure%20untouched%20nature&width=1400&height=400&seq=iceland-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 82.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Çok Yüksek Maliyet', text: 'İzlanda dünyanın en pahalı ülkelerinden biridir. Günlük en az 100€ (yaklaşık 15.000 ISK) karşılığı bakiye önerilir.', type: 'warning' },
@@ -1131,7 +1131,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/lva',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Tallinn%20Old%20Town%20Estonia%20historic%20city%20center%20medieval%20architecture%20wooden%20buildings%20historic%20center%20Baltic%20heritage%20European%20city%20UNESCO%20site%20tourist%20destination%20charming%20streets%20cultural%20landmark%20travel%20photography%20blue%20sky%20travel%20photography%20Scandinavian%20heritage&width=1400&height=400&seq=latvia-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 75.0,
     tips: [
       { icon: 'ri-check-double-line', title: 'Kolay Başvuru', text: 'Letonya, nispeten kolay vize veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile onay oranı artar.', type: 'success' },
@@ -1206,7 +1206,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/che',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Vaduz%20Castle%20Liechtenstein%20Alpine%20mountains%20medieval%20fortress%20scenic%20landscape%20European%20principality%20mountain%20backdrop%20historic%20residence%20travel%20destination%20majestic%20scenery%20blue%20sky&width=1400&height=400&seq=liechtenstein-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 82.3,
     tips: [
       { icon: 'ri-information-line', title: 'İsviçre Üzerinden', text: 'Lihtenştayn vizesi İsviçre konsolosluğu üzerinden işlenir. VFS Global\'den İsviçre/Lihtenştayn seçeneğini işaretleyin.', type: 'info' },
@@ -1281,7 +1281,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/ltu',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Vilnius%20Old%20Town%20Lithuania%20baroque%20architecture%20historic%20churches%20medieval%20buildings%20Baltic%20heritage%20colorful%20facades%20European%20city%20UNESCO%20site%20tourist%20destination%20charming%20streets%20blue%20sky%20travel%20photography%20Lithuanian%20culture&width=1400&height=400&seq=lithuania-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 66.0,
     tips: [
       { icon: 'ri-check-double-line', title: 'Hızlı İşlem', text: 'Litvanya genellikle 7-10 iş günü içinde vize sonucu verir. Schengen ülkelerinden en hızlı sonuç veren ülkelere sahiptir.', type: 'success' },
@@ -1356,7 +1356,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/lux',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Luxembourg%20City%20fortifications%20historic%20castle%20medieval%20architecture%20European%20capital%20scenic%20valley%20ancient%20walls%20UNESCO%20heritage%20tourist%20destination%20cultural%20landmark%20travel%20photography%20blue%20sky%20travel%20photography%20Scandinavian%20heritage&width=1400&height=400&seq=luxembourg-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 83.0,
     tips: [
       { icon: 'ri-information-line', title: 'Belçika Üzerinden', text: 'Lüksemburg vizesi Belçika konsolosluğu üzerinden işlenir. VFS Global\'den Belçika/Lüksemburg seçeneğini işaretleyin.', type: 'info' },
@@ -1431,7 +1431,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Belem%20Tower%20Lisbon%20Portugal%20Manueline%20architecture%20historic%20fortress%20Dracula%20castle%20mountain%20backdrop%20historic%20landmark%20Portuguese%20heritage%20Gothic%20architecture%20travel%20destination%20blue%20sky%20tourism%20photography%20charming%20old%20stone%20walls%20European%20culture&width=1400&height=400&seq=portugal-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 93.0,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Randevu Sıkıntısı', text: 'Portekiz son yıllarda çok popüler oldu. Randevu bulmak zorlaşabilir, 1-2 ay önceden başvurun.', type: 'warning' },
@@ -1508,7 +1508,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/mlt',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Valletta%20Malta%20historic%20capital%20city%20Mediterranean%20sea%20limestone%20buildings%20baroque%20architecture%20Grand%20Harbour%20fortifications%20UNESCO%20heritage%20European%20island%20travel%20destination%20blue%20sky%20reflection%20serene%20water%20Slovenian%20heritage%20scenic%20beauty&width=1400&height=400&seq=malta-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 61.5,
     tips: [
       { icon: 'ri-translate-2', title: 'İngilizce Resmi Dil', text: 'Malta\'nın resmi dillerinden biri İngilizcedir. Belgelerinizin İngilizce tercümesi yeterlidir, ayrıca Maltaca gerekmez.', type: 'info' },
@@ -1584,7 +1584,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/nor',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Norwegian%20fjords%20Norway%20dramatic%20landscape%20Geirangerfjord%20steep%20cliffs%20waterfalls%20serene%20water%20Scandinavian%20nature%20majestic%20scenery%20Nordic%20beauty%20travel%20destination%20blue%20sky%20pristine%20environment%20stunning%20mountain%20reflections%20outdoor%20adventure&width=1400&height=400&seq=norway-hero-002&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 79.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'Norveç, Avrupa\'nın en pahalı ülkesidir. Günlük en az 80€ karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -1660,7 +1660,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/pol',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Wawel%20Castle%20Krakow%20Poland%20medieval%20fortress%20hilltop%20historic%20landmark%20Vistula%20river%20view%20Polish%20heritage%20Gothic%20Renaissance%20architecture%20European%20capital%20city%20skyline%20travel%20destination%20blue%20sky%20cultural%20monument&width=1400&height=400&seq=poland-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 82.6,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Polonya, Türk vatandaşlarına oldukça yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1736,7 +1736,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'BLS International',
     appointmentUrl: 'https://blsslovakiavisa.com/turkey/',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Bratislava%20Castle%20Slovakia%20hilltop%20fortress%20Danube%20river%20view%20historic%20walls%20Slovak%20capital%20city%20skyline%20medieval%20architecture%20European%20heritage%20travel%20destination%20blue%20sky%20cultural%20monument%20elegant%20structure&width=1400&height=400&seq=slovakia-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 88.8,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Slovakya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1813,7 +1813,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'AS Visa',
     appointmentUrl: 'https://www.as-visa.com/Default.aspx',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Lake%20Bled%20Slovenia%20emerald%20green%20lake%20island%20church%20Julian%20Alps%20mountain%20backdrop%20stunning%20landscape%20European%20nature%20travel%20destination%20blue%20sky%20reflection%20serene%20water%20Slovenian%20heritage%20scenic%20beauty&width=1400&height=400&seq=slovenia-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 89.1,
     tips: [
       { icon: 'ri-check-double-line', title: 'En Yüksek Onay Oranlarından Biri', text: 'Slovenya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -1890,7 +1890,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/swe',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Stockholm%20Sweden%20old%20town%20Gamla%20Stan%20colorful%20buildings%20waterfront%20Baltic%20sea%20Scandinavian%20architecture%20historic%20city%20center%20Swedish%20heritage%20European%20capital%20travel%20destination%20blue%20sky%20charming%20streets%20cultural%20landmark&width=1400&height=400&seq=sweden-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 80.8,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'İsveç, Avrupa\'nın en pahalı ülkesidir. Günlük en az 75€ karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -1967,7 +1967,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/che',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Swiss%20Alps%20Switzerland%20snow%20capped%20mountains%20Matterhorn%20peak%20dramatic%20alpine%20landscape%20Zermatt%20village%20scenic%20valley%20green%20meadows%20crystal%20clear%20lake%20reflection%20majestic%20peaks%20European%20nature%20travel%20destination%20blue%20sky%20pristine%20environment%20stunning%20scenery&width=1400&height=400&seq=switzerland-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 84.0,
     tips: [
       { icon: 'ri-money-euro-circle-line', title: 'Yüksek Yaşam Maliyeti', text: 'İsviçre, Avrupa\'nın en pahalı ülkesidir. Günlük en az 100 CHF (yaklaşık 105€) karşılığı bakiye göstermeniz önerilir.', type: 'warning' },
@@ -2044,7 +2044,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/hrv',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Dubrovnik%20Croatia%20old%20town%20medieval%20walls%20Adriatic%20sea%20limestone%20buildings%20historic%20city%20center%20UNESCO%20heritage%20European%20coastal%20city%20travel%20destination%20blue%20sky%20charming%20streets%20cultural%20landmark%20orange%20rooftops%20Mediterranean%20architecture&width=1400&height=400&seq=croatia-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 79.0,
     tips: [
       { icon: 'ri-calendar-check-line', title: 'Randevu Süreci (VFS Global)', text: 'Hırvatistan randevuları VFS Global üzerinden alınmaktadır. Yaz aylarında (Haziran-Ağustos) turizm yoğunluğu nedeniyle randevu bulmak güçleşebilir; seyahat tarihinizden en az 2 ay önce başvurmanız önerilir.', type: 'warning' },
@@ -2121,7 +2121,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/bgr',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Rila%20Monastery%20Bulgaria%20Orthodox%20Christian%20monastery%20mountain%20valley%20colorful%20frescoes%20historic%20architecture%20Bulgarian%20heritage%20UNESCO%20site%20travel%20destination%20blue%20sky%20cultural%20landmark%20Eastern%20European%20monastery%20ancient%20stone%20walls&width=1400&height=400&seq=bulgaria-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 81.2,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Bulgaristan, Türk vatandaşlarına oldukça yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -2198,7 +2198,7 @@ export const countriesData: Country[] = [
     appointmentProvider: 'VFS Global',
     appointmentUrl: 'https://visa.vfsglobal.com/tur/tr/rou',
     appointmentStatus: [],
-    heroImage: 'https://readdy.ai/api/search-image?query=Bran%20Castle%20Romania%20Transylvania%20medieval%20fortress%20Dracula%20castle%20mountain%20backdrop%20historic%20landmark%20Gothic%20architecture%20travel%20destination%20blue%20sky%20tourism%20photography%20charming%20old%20stone%20walls%20European%20culture%20Romanian%20heritage&width=1400&height=400&seq=romania-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 87.2,
     tips: [
       { icon: 'ri-check-double-line', title: 'Yüksek Onay Oranı', text: 'Romanya, Türk vatandaşlarına en yüksek onay oranı veren Schengen ülkelerinden biridir. Eksiksiz başvuru ile olumlu sonuç alma ihtimaliniz çok yüksektir.', type: 'success' },
@@ -2286,7 +2286,7 @@ export const countriesData: Country[] = [
         soldOutUntil: '13.03.2026'
       }
     ],
-    heroImage: 'https://readdy.ai/api/search-image?query=Colosseum%20Rome%20Italy%20ancient%20amphitheater%20Roman%20architecture%20historic%20landmark%20blue%20sky%20iconic%20monument%20archaeological%20site%20Italian%20heritage%20famous%20ruins%20travel%20destination%20classical%20architecture%20European%20history%20tourist%20attraction%20majestic%20structure&width=1400&height=400&seq=italy-hero-001&orientation=landscape',
+    heroImage: '/countries-bg.jpg',
     approvalRate: 91.1,
     tips: [
       { icon: 'ri-alarm-warning-line', title: 'Erken Randevu Alın (iDATA)', text: 'iDATA\'da randevu almak oldukça zordur. Yoğunluk yüzünden sistem ödeme ekranında sürekli hata verir. Seyahat tarihinizden en az 3 ay önce randevu almaya başlayın.', type: 'warning' },

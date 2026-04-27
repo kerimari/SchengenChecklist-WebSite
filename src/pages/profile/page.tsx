@@ -122,7 +122,7 @@ export default function ProfilePage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-16 lg:pb-20 bg-gradient-to-br from-teal-50 via-white to-orange-50">
-        <div className="absolute inset-0 bg-[url('https://readdy.ai/api/search-image?query=modern%20minimalist%20geometric%20pattern%20with%20soft%20teal%20and%20orange%20abstract%20shapes%20on%20white%20background%20clean%20professional%20design%20subtle%20texture%20for%20profile%20page%20header%20contemporary%20style%20elegant&width=1920&height=400&seq=profile-hero-bg&orientation=landscape')] opacity-5 bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-5 bg-cover bg-center"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full text-white text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 shadow-xl">

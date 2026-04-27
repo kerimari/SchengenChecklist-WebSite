@@ -1,123 +1,45 @@
-
 <!doctype html>
 <html lang="tr">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%23003399'/><text y='78' x='50' text-anchor='middle' font-size='72'>🇪🇺</text></svg>" />
+   <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='8' fill='%23003399'/%3E%3Ctext y='78' x='50' text-anchor='middle' font-size='72'%3E🇪🇺%3C/text%3E%3C/svg%3E" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Meta Tags -->
     <title>Schengen Checklist | Türkiye Schengen Rehberi</title>
     <meta name="description" content="Türkiye'den Schengen vizesi başvurusu için gerekli tüm evraklar, belgeler ve konsolosluk bilgileri. Almanya, Fransa, İtalya, İspanya ve diğer 26 Schengen ülkesi için güncel evrak listeleri ve detaylı rehber." />
     <meta name="keywords" content="schengen vizesi, vize evrakları, schengen ülkeleri, vize başvurusu, konsolosluk, türkiye schengen vizesi" />
-    <meta name="last-modified" content="2025-01-01" />
+    <meta name="last-modified" content="2026-04-26" />
     
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://schengenchecklist.com/" />
     
-    <!-- Open Graph Tags -->
     <meta property="og:title" content="Schengen Checklist | Türkiye Schengen Rehberi" />
     <meta property="og:description" content="Türkiye'den Schengen vizesi başvurusu için gerekli tüm evraklar, belgeler ve konsolosluk bilgileri." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://schengenchecklist.com/" />
     
-    <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Schengen Checklist | Türkiye Schengen Rehberi" />
     <meta name="twitter:description" content="Türkiye'den Schengen vizesi başvurusu için gerekli tüm evraklar ve detaylı rehber." />
-    
-    <!-- ============================================================
-         LCP Image Preload
-         Tells the browser to fetch the hero image immediately,
-         before the JS bundle is parsed and React renders.
-         This is the single most impactful LCP optimisation.
-         imagesrcset / imagesizes provide responsive hints so the
-         browser picks the right size for the viewport.
-    ============================================================ -->
-    <link
-      rel="preload"
-      as="image"
-      href="https://readdy.ai/api/search-image?query=Aerial%20view%20of%20European%20cityscape%20at%20dusk%20with%20historic%20architecture%20and%20warm%20golden%20lights%2C%20romantic%20European%20travel%20destination%2C%20cobblestone%20streets%2C%20cathedral%20spires%2C%20terracotta%20rooftops%2C%20cinematic%20atmosphere%2C%20professional%20travel%20photography%2C%20dark%20moody%20evening%20sky%2C%20city%20lights%20glowing&width=1920&height=1080&seq=hero002&orientation=landscape"
-      fetchpriority="high"
-    />
 
-    <!-- Preconnect to the image CDN so the TCP+TLS handshake
-         is done before the preload request fires -->
-    <link rel="preconnect" href="https://readdy.ai" crossorigin />
-
-    <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-    <link rel="dns-prefetch" href="https://readdy.ai" />
 
-    <!-- Preconnect for critical external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-    <!-- ============================================================
-         Remix Icon — Non-blocking load
-         1. preload: browser fetches the CSS early but doesn't block render
-         2. media=print trick: stylesheet is applied only after load fires
-         3. noscript: fallback for JS-disabled browsers
-         The icon font files themselves are loaded on-demand by the browser
-         only when an icon is actually rendered in the viewport.
-    ============================================================ -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'" />
     <noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" /></noscript>
 
-    <!-- Preconnect to flag CDNs used by CountryFlag component -->
     <link rel="preconnect" href="https://flagsapi.com" crossorigin />
     <link rel="dns-prefetch" href="https://flagsapi.com" />
     <link rel="dns-prefetch" href="https://flagcdn.com" />
     
-    <!-- ============================================================
-         Google Fonts — Font Loading CLS Prevention
-
-         Strategy:
-         1. preconnect  — TCP+TLS handshake done before any font request
-         2. preload     — fetch the font CSS file at highest priority,
-                          before the parser reaches the <link> below
-         3. non-blocking load (media=print trick) — font CSS never
-                          blocks rendering; text shows in fallback font
-                          immediately, swaps when Inter arrives
-         4. noscript    — fallback for JS-disabled browsers
-    ============================================================ -->
-
-    <!-- Step 1: preload the font CSS (not the font files — browser
-         picks the right format/subset automatically from the CSS) -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    />
-
-    <!-- Step 2: non-blocking stylesheet load -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-
-    <!-- Step 3: noscript fallback -->
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      />
-    </noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" /></noscript>
   </head>
   <body>
     <div id="root"></div>

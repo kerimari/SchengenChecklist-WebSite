@@ -11,10 +11,17 @@ export default function Footer() {
     setIsSubmitting(true);
     setSubmitStatus(null);
     try {
-      const response = await fetch('https://readdy.ai/api/form/d6gtpnqu8ojn6g516kcg', {
+      // Formspree entegrasyonu sağlandı
+      const response = await fetch('https://formspree.io/f/xbdqbvje', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ email }),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          subject: 'Yeni Bülten Aboneliği',
+          email: email
+        }),
       });
       if (response.ok) {
         setSubmitStatus('success');
@@ -106,7 +113,7 @@ export default function Footer() {
               <p className="text-white text-base leading-relaxed mb-4 sm:mb-6">
                 Vize güncellemeleri ve ipuçları için bültene abone olun.
               </p>
-              <form id="newsletter-form" data-readdy-form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <form id="newsletter-form" onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                 <input
                   type="email"
                   name="email"
